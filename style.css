@@ -1,0 +1,381 @@
+/*
+Theme Name: Travel Tribe
+Theme URI: https://wptravelkit.com/wordpress-travel-themes/travel-tribe-wordpress-theme/
+Author: WP Travel Kit
+Author URI:	https://wptravelkit.com/
+Description: Travel Tribe is a versatile WordPress theme tailored for travel agencies, tour operators, and adventure enthusiasts. Seamlessly integrating with the WP Travel Engine plugin, it offers a comprehensive solution for creating and managing stunning travel websites. The theme's responsive design ensures a flawless experience across all devices, while its clean, modern layout captivates visitors instantly. Travel Tribe features customizable templates for tour listings, destination guides, and booking forms, all easily adaptable to match your brand's unique style. Its powerful functionality includes tools for managing tours, bookings, and payments directly through the WordPress dashboard. With eye-catching image galleries, intuitive navigation, and SEO optimization, Travel Tribe helps showcase your travel offerings effectively. The theme also supports multiple languages and currencies, making it ideal for businesses catering to an international clientele. Whether you're displaying tour packages, sharing travel tips, or handling reservations, Travel Tribe provides the perfect platform to bring your travel business to life online. View theme demo here: https://preview.wptravelkit.com/travel-tribe/
+Template: travelscape
+Version: 1.0.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, footer-widgets, custom-background, custom-header, custom-menu, custom-logo, featured-images, threaded-comments, full-width-template, translation-ready, food-and-drink, entertainment 
+Text Domain:  travel-tribe
+*/
+
+.travelscape-header .travelscape-header-top {
+	border-bottom: none;
+	background-color: var(--primary-color);
+	padding: 5px 0;	
+	width: 100%;
+}
+.travelscape-header-top-left {
+    margin-right: 15px;
+}
+.travelscape-header-top-center {	
+	display: flex;
+	gap: 15px;
+	color: var(--secondary-color);
+}
+.travelscape-header-top-center a, visited {
+	font-size: 0.9em;
+	color: var(--primary-color-inverse);
+	font-weight: 500;
+}
+.travelscape-header-top-center a:hover {
+	color: var(--primary-color-inverse);
+	text-decoration: underline;
+}
+.travelscape-social-media-wrap .social-icons li {
+    margin-left: 10px;
+	margin-bottom: 0;
+}
+.travelscape-social-media-wrap .social-icons a {
+    background-color: transparent;
+	padding: 0 5px;
+	box-shadow: none;
+}
+.travelscape-social-media-wrap .social-icons a svg {
+    color: var(--primary-color-inverse);
+    fill: var(--primary-color-inverse);
+	width: 14px;
+	height: 14px;
+	font-size: 9px;
+	vertical-align: sub;	
+}
+.travelscape-social-media-wrap .social-icons a:hover svg {
+    color: var(--primary-color-inverse);
+    fill: var(--primary-color-inverse);
+}
+.travelscape-header-bottom {
+    padding: 15px 0;
+}
+.travelscape-header-bottom .header-desktop > div {
+  flex-grow: 1;
+  flex-basis: calc(100% / 3);
+}
+.site-header {	
+	border-bottom: 1px solid var(--subtle-color);
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background-color: var(--base-color);
+}
+.site-header .header-desktop {
+	word-wrap: break-word;
+	background-color: var(--base-color);	
+	border-radius: 22px;
+	padding: 0px 0;	
+}
+.header-desktop .travelscape-menu-wrap {
+    margin-left: 0;
+}
+.site-header .header-desktop .site-branding {	
+	margin-left: auto;
+	flex-basis: auto;
+}
+.header-desktop .header-bottom-right {
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 15px;
+}
+.header-desktop .header-bottom-right .travelscape-header-email {
+    font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.header-desktop .travelscape-header-button {
+    margin-left: 0;
+	text-align: right;
+}
+.header-desktop .travelscape-header-button a {
+	background-color: var(--primary-color);
+	color: var(--primary-color-inverse);
+	text-transform: uppercase;
+    font-size: 0.8em;	
+	font-weight: 400;
+	border-radius: 150px;
+	border: 1px solid var(--primary-color-inverse);
+	padding: 15px 30px;
+}
+.header-desktop .travelscape-header-button a:active,
+.header-desktop .travelscape-header-button a:hover {
+	background-color: var(--secondary-color);
+	color: var(--secondary-color-inverse)
+}
+.header-desktop .main-navigation {
+	background-color: #ffffff;
+	border-radius: 22px;
+	padding: 0px 0px 0px 5px;
+}
+.header-desktop .main-navigation ul li {	
+	margin: 0;
+	padding: 0 10px;	
+}
+.header-desktop .main-navigation ul li a {
+    font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+	display: inline-block;
+}
+.header-desktop .main-navigation ul li:first-child {
+	padding-left: 0;
+}
+.header-desktop .main-navigation ul li:last-child {
+	padding-right: 0;
+}
+.header-desktop .main-navigation ul li.menu-item-has-children ul.sub-menu a {
+    font-size: 15px;
+	font-weight: 400;
+	border-left: 0px solid var(--primary-border-color);
+	border-right: 0px solid var(--primary-border-color);
+	padding: 5px;
+	display: inline-block;
+}
+.site-header .header-mobile {
+	background-color: var(--base-color);	
+	word-wrap: break-word;
+	border-radius: 22px;
+	padding: 5px 0;
+    margin-left: -15px;
+    margin-right: -15px;	
+}
+.header-mobile .main-navigation ul li {
+    border-bottom: 1px solid var(--primary-border-color);
+}
+.header-mobile .main-navigation ul li > a {
+    font-size: 15px;
+	text-transform: uppercase;
+    padding: 10px 15px;
+    background: var(--base-color);      
+	font-weight: 400;    
+    color: var(--primary-color);	
+}
+.header-mobile .main-navigation ul li .children, .header-mobile .main-navigation ul li .sub-menu {
+    background: var(--base-color);
+}
+.header-mobile .main-navigation ul li .children li a, .header-mobile .main-navigation ul li .sub-menu li a {
+    font-size: 15px;    
+}
+.header-mobile .travelscape-header-button {
+    margin-left: auto;
+	margin-top: -10px;
+}
+.header-mobile .menu-toggle {    
+    margin-left: 10px;
+}
+.header-mobile .travelscape-header-button a {
+	background-color: var(--primary-color);
+	color: var(--primary-color-inverse);
+    font-size: 0.9em;	
+	font-weight: 400;
+	border-radius: 150px;
+	border: 1px solid var(--primary-color-inverse);
+	padding: 12px 24px;
+}
+body.travelscape-right-sidebar #secondary {
+    border-left: 0;
+    background-color: var(--base-color);
+    border-radius: 0;
+	border: 1px solid var(--primary-border-color);
+}
+body.travelscape-left-sidebar #secondary {
+    border-left: 0;
+    background-color: #fafafa;
+    border-radius: 22px;
+}
+.site-main {
+	padding: 25px 0;
+}
+article.has-post-thumbnail .entry-excerpt {
+    background-color: var(--base-color);
+    padding: 40px;
+    border-radius: 0;
+    box-shadow: 0 3px 40px rgba(55, 55, 55, 0.05);
+	border: 0px solid var(--primary-border-color);
+}
+.site-footer {	
+	background-color: var(--primary-color);	
+	padding: 0px;
+}
+.site-footer .travelscape-footer-top {	
+	background-color: var(--primary-color);
+	padding: 0;
+}
+.site-footer .travelscape-footer-top .grid {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.site-footer .travelscape-footer-top .travelscape-foot-main-col {	
+	padding: 25px;
+}
+.site-footer h3.widget-title {
+	color: var(--primary-color-inverse);	
+}
+.site-footer .widget a,
+.site-footer .widget ul,
+.site-footer .widget ul li,
+.site-footer .widget p,
+.site-footer .widget ul li p {
+	color: var(--primary-color-inverse);
+	font-size: 16px;
+}
+.site-footer .travelscape-footer-top .widget p {
+	font-size: 16px;
+	line-height: 1.9em;
+}
+.site-footer .travelscape-footer-top .widget {
+	padding: 10px 0;
+}
+.site-footer .travelscape-footer-bottom {	
+	background-color: var(--primary-color);
+	border-top: none;
+	position: relative;
+}
+.site-footer .travelscape-footer-bottom::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	z-index: 0;	
+}
+.site-footer .travelscape-footer-bottom .row {
+}
+.site-footer .site-info a,
+.site-footer .site-info p {
+	color: var(--primary-color-inverse);
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+}
+/* WPTE Styles */
+.category-trips-single .category-trips-single-inner-wrap {
+	box-shadow: none !important;
+}
+.wptravelengine_css_v2 .thank-you-container,
+.wptravelengine_css_v2 .wpte-bf-checkout .wpte-bf-book-summary,
+.wpte-bf-checkout .wte-coupon-whole-wrap, .wpte-bf-checkout .wpte-bf-checkout-form form, .wpte-bf-checkout .wpte-bf-book-summary,
+.wrapper--style, .wptravelengine_css_v2 #tabs-container, .wte_enquiry_contact_form, .wte-trip-facts,
+.category-trips-single .category-trips-single-inner-wrap,
+.wptravelengine_css_v2 .advanced-search-wrapper .sidebar {
+	box-shadow: none;
+	border: 1px solid var(--primary-border-color);
+}
+.fixed-header .nav-tab-wrapper .tab-anchor-wrapper {
+	border-left: 1px solid var(--primary-border-color);
+}
+.fixed-header .nav-tab-wrapper .tab-anchor-wrapper .nav-tab {
+	padding: 25px 35px;
+}
+.nav-tab-wrapper .tab-anchor-wrapper .nav-tab {
+	color: var(--secondary-color);
+	font-family: var(--font-family);
+}
+.widget_wte_featured_trips_widget .category-trips-widget {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-border-color);
+}
+@media (max-width: 1024px) {
+	.header-desktop .main-navigation ul li {
+		padding: 15px;
+	}	
+	.site-footer .travelscape-footer-top {
+		padding: 25px 0;
+	}
+	.site-footer .travelscape-footer-top .travelscape-foot-main-col {				
+		padding: 0 15px;
+	}
+	.site-footer .travelscape-footer-top .widget {
+		padding: 0;
+	}
+	.site-footer h3.widget-title {
+		margin: 10px;
+		margin-left: 0;
+	}	
+}
+@media (max-width: 768px) { 
+	.site-header {
+		padding: 0;
+	}
+	.site-header .header-mobile .site-branding {
+		width: auto;
+	}
+	.site-footer .travelscape-footer-top {
+		padding: 25px 0;
+	}
+	.site-footer .travelscape-footer-top .travelscape-foot-main-col {				
+		padding: 0 15px;
+	}
+	.site-footer .travelscape-footer-top .widget {
+		padding: 0;
+	}
+	.site-footer h3.widget-title {
+		margin: 10px;
+		margin-left: 0;
+	}	
+}
+@media (max-width: 480px) { 
+	.site-header .travelscape-header-top-left {
+		order: 0;
+	}
+	.site-header .travelscape-header-top-center {
+		order: 1;
+	}	
+	.site-header .travelscape-header-top-right {
+		order: 2;
+	}	
+	.site-header .header-mobile .site-branding {
+		width: auto;
+	}	
+	.site-header .travelscape-header-bottom .top-wrap {
+		margin: 0;
+	}	
+	.header-mobile .main-navigation ul li a {
+		padding: 10px 25px;
+	}	
+	.site-main {
+		padding: 0;
+	}	
+	article.has-post-thumbnail .entry-excerpt {
+		padding: 30px;
+	}	
+	article.article .read-more-link {
+		padding: 8px 30px;
+		font-weight: 400;
+		font-size: 0.9em;
+	}	
+	.travelscape-pagination {
+		margin-top: 20px;
+	}	
+	.site-footer .travelscape-footer-top {
+		padding: 25px 0;
+	}
+	.site-footer .travelscape-footer-top .widget {
+		padding: 0;
+	}	
+	.site-footer .travelscape-footer-top .travelscape-foot-main-col {
+		border-left: none;		
+		padding: 0px 25px;
+	}	
+	.site-footer .travelscape-footer-bottom .travelscape-payment-logo {
+		margin-left: 0;
+	}
+}
